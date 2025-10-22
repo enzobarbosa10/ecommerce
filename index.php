@@ -192,7 +192,7 @@
         </div>
         
         <div class="link-cadastro">
-            <p>Não tem uma conta? <a href="views/Usuario/cadastro_usuario.php">Cadastre-se</a></p>
+            <p>Não tem uma conta? <a href="Views/Usuario/cadastro_usuario.php">Cadastre-se</a></p>
         </div>
     </div>
 </body>
@@ -200,8 +200,8 @@
 
 <?php
 // Importa as classes necessárias
-require_once 'model/Usuario.php';
-require_once 'controller/UsuarioController.php';
+require_once 'Models/Usuario.php';
+require_once 'Controller/UsuarioController.php';
 
 // Verifica se o botão login foi pressionado
 if (isset($_POST['login'])) {
@@ -218,7 +218,7 @@ if (isset($_POST['login'])) {
     // Verifica se o login foi bem-sucedido
     if (strpos(strtolower($mensagem), 'sucesso') !== false) {
         // Redireciona para a página principal do sistema
-        header('Location: view/dashboard.php');
+        header('Location: Views/dashboard.php');
         exit();
     }
     
@@ -234,7 +234,7 @@ if (isset($_GET['msg'])) {
 session_start();
 if (isset($_SESSION['usuario_id'])) {
     // Redireciona para o dashboard se já estiver logado
-    header('Location: view/dashboard.php');
+    header('Location: Views/dashboard.php');
     exit();
 }
 ?>

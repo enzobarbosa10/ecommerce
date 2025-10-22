@@ -15,7 +15,7 @@ class UsuarioController {
         // Valida o formato do email e a senha
         if ($this->validaEmail($email) && $this->validaSenha($senha)) {
             // Cria objeto do model Usuario e tenta realizar o login
-            require_once __DIR__ . '/../model/Usuario.php';
+            require_once __DIR__ . '/../Models/Usuario.php';
             $objUsuario = new Usuario();
             $objUsuario->setEmail($email);
             $objUsuario->setSenha($senha);

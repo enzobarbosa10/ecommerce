@@ -156,8 +156,8 @@
 
 <?php
 // Importa as classes necessárias
-require_once '../../model/Usuario.php';
-require_once '../../controller/UsuarioController.php';
+require_once '../../Model/Usuario.php';
+require_once '../../Controller/UsuarioController.php';
 
 // Verifica se o botão cadastrar foi pressionado
 if (isset($_POST['cadastrar'])) {

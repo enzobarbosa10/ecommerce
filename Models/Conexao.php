@@ -323,8 +323,7 @@ class Conexao {
  * Este arquivo demonstra as diversas formas de usar a classe Conexao
  */
 
-require_once 'Models/Conexao.php';
-
+require_once __DIR__ . '/Conexao.php';
 // ==================== EXEMPLO 1: Conexão Básica ====================
 echo "<h3>Exemplo 1: Obter Conexão</h3>";
 
