@@ -1,0 +1,74 @@
+# Arquivo .gitignore para o projeto ecommerce
+# Adicione na raiz do seu projeto
+
+# ====================================
+# Arquivos de Configuração Sensíveis
+# ====================================
+config/database.php
+config/database.prod.php
+*.env
+.env
+.env.local
+.env.production
+
+# ====================================
+# Logs
+# ====================================
+*.log
+logs/
+error_log
+
+# ====================================
+# Arquivos Temporários
+# ====================================
+*.tmp
+*.temp
+tmp/
+temp/
+
+# ====================================
+# Cache
+# ====================================
+cache/
+*.cache
+
+# ====================================
+# Uploads (se necessário)
+# ====================================
+# uploads/
+# imagens/produtos/
+
+# ====================================
+# IDEs e Editores
+# ====================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ====================================
+# Composer
+# ====================================
+vendor/
+composer.lock
+
+# ====================================
+# Node Modules (se usar frontend)
+# ====================================
+node_modules/
+package-lock.json
+
+# ====================================
+# Backups de Banco
+# ====================================
+*.sql.gz
+*.sql.zip
+backup/
+
+# ====================================
+# Arquivos do Sistema
+# ====================================
+Thumbs.db
+desktop.ini
